@@ -31,24 +31,7 @@
         <nav>
             <ul class="nav nav-pills pull-right">
                 <li class="nav-item">
-                    <a href="javascript:void(0)" class="nav-link" onclick="$('#settingsModal').modal('show')">Generate Donation Website</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0)" onclick="toggleNightMode()">Night Mode</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/pRizz/Monero-Donator">Source</a>
-                </li>
-
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://prizz.github.io/My-IOTA-Balance/">My IOTA Balance</a></li>
-                        <li><a href="https://prizz.github.io/iota-transaction-spammer-webapp/">IOTA Transaction Spammer</a></li>
-                        <li><a href="https://prizz.github.io/iota-seed-encryptor-decryptor/">IOTA Seed Encryptor/Decryptor</a></li>
-                        <li><a href="https://prizz.github.io/iota-buy-strategy/">IOTA Buy Strategy</a></li>
-                        <li><a href="https://prizz.github.io/Monero-Donator/">Monero Donator</a></li>
-                    </ul>
                 </li>
 
             </ul>
@@ -61,8 +44,7 @@
     </div>
 
     <div class="jumbotron" style="opacity: 0;">
-        <h1 id="jumbotronTitle" class="display-3">Thank you for your support! You are helping me mine Monero just by visiting this website. You can generate your own donation website with the link at the top or <a href="javascript:void(0)" onclick="$('#settingsModal').modal('show')">here</a>!</h1>
-        <h2 id="jumbotronSubtitle" class="display-3">- <a href="https://github.com/pRizz">pRizz</a></h2>
+        <h1 id="jumbotronTitle" class="display-3">Thank you for your support! You are helping me mine Monero just by visiting this website.</h1>
     </div>
 
     <div class="row marketing">
@@ -127,103 +109,6 @@
             <h2>
                 This webapp utilizes the <a href="https://coin-hive.com/">coinhive</a> library to mine Monero with CPU power, as part of a mining pool.
             </h2>
-        </div>
-    </div>
-
-    <div class="row marketing text-center">
-        <div class="col-md-8 col-md-offset-2">
-            <h1>About the Author</h1>
-            <h2>
-                This project was originally created by Peter Ryszkiewicz (<a href="https://github.com/pRizz">pRizz@GitHub</a>), software engineer in Chicago, IL.
-            </h2>
-        </div>
-    </div>
-
-    <div class="row marketing text-center">
-        <div class="col-md-8 col-md-offset-2">
-            <h1>About the Project</h1>
-            <h2>
-                This project is hosted on GitHub at <a href="https://github.com/pRizz/Monero-Donator">https://github.com/pRizz/Monero-Donator</a> under the MIT license.
-            </h2>
-        </div>
-    </div>
-    <div class="row marketing text-center">
-        <div class="col-md-8 col-md-offset-2">
-            <pre>
-MIT License
-
-Copyright (c) 2017 Peter Ryszkiewicz
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-            </pre>
-        </div>
-    </div>
-    <footer class="footer">
-        <p><a href="https://github.com/pRizz/Monero-Donator">Fork this on GitHub!</a></p>
-        <p><a href="https://github.com/pRizz/Monero-Donator/releases">Download this webapp</a>
-        </p>
-        <p>
-            If you want to support projects like this one, please consider donating:
-        </p>
-        <div>IOTA: <code>ARDPDHLZPQZRDBPKTZBIK9OFKCJMGCHFQJTQEXL9KRIVSHNRGHJCEOCMRFXGJMQXDVGNFTTS9GUIOJXXW9RONFYJKW</code></div>
-        <div>Monero: <code>49RzM7gNHkpbhBGXQHnfnNbbvS39EG2gzLEjdxtDfNtUakYBqSg6m8zWJ69PRbBHgG61HaxnXwhyPicBbWyzxCNUDeCVgFt</code></div>
-        <p>© Peter Ryszkiewicz 2017</p>
-    </footer>
-
-    <div class="modal fade" id="settingsModal" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Generate Donation Website</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <h3>
-                        Jumbotron Title (can include html; optional)
-                    </h3>
-                    <input id="jumbotronTitleInput" class="form-control" type="text" placeholder="Jumbotron Title">
-                    <h3>
-                        Jumbotron Subtitle (can include html; optional)
-                    </h3>
-                    <input id="jumbotronSubtitleInput" class="form-control" type="text" placeholder="Jumbotron Subtitle">
-                    <h3>
-                        Coin Hive Public Site Key (looks like <code>HXMpOVznroTF71gO6NV1bL3NbsSYBOh8</code>)
-                    </h3>
-                    <div>
-                        Don't have a public site key? <a href="https://coin-hive.com/account/signup">Register an account at coinhive!</a> Then, copy and paste your key at: Settings → Sites & API Keys
-                    </div>
-                    <input id="coinhivePublicSiteKeyInput" class="form-control" type="text" placeholder="Coin Hive Public Site Key">
-                    <h3>
-                        Generated Website:
-                    </h3>
-                    <h4>
-                        <a id="generatedWebsiteLink" href="" style="word-wrap: break-word"></a>
-                    </h4>
-                    <h5>Right click and copy the address above</h5>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
         </div>
     </div>
 
